@@ -1,0 +1,88 @@
+.card{
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    align-self: center;
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.card-personaname{
+    font-size: medium;
+    font-weight: 200;
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-rank_tier{
+    font-size: medium;
+    font-weight: 200;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.rankMedal {
+    position: relative;
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .rankMedal-icon {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .rankMedal-star {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: auto;
+    top: 0px;
+  }
+  
+  .rankMedal[data-hint]:hover::after {
+    content: attr(data-hint);
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .rankMedal[data-hint]:hover::after {
+    opacity: 1;
+  }
+  
+  .card-avatar {
+    width: 64px;  /* Ajusta el tamaño según necesites */
+    height: 64px;
+    border-radius: 50%;  /* Hace que la imagen sea un círculo */
+    object-fit: cover;  /* Asegura que la imagen no se deforme */
+    border: 0px solid #ffffff;  /* Opcional: agrega un borde blanco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Opcional: añade sombra */
+    margin-right: 10px;
+  }
+  
